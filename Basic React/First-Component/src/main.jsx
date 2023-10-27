@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // calling component
-import App from "./Componentes/App.jsx";
-import Apli from "./Componentes/ArrowFunc.jsx";
-import Aplicate from "./Componentes/Function.jsx";
-import Father from "./Componentes/Father.jsx";
+import App from "./Components/App.jsx";
+import Apli from "./Components/ArrowFunc.jsx";
+import Aplicate from "./Components/Function.jsx";
+import Father from "./Components/Father.jsx";
 // calling styles
 import "./index.css";
 
