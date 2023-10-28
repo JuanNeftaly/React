@@ -37,4 +37,5 @@ const Contador = () => {
   );
 };
 
+// importante exportar 
 export default Contador;
