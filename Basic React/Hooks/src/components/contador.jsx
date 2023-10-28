@@ -1,10 +1,23 @@
 // importando Hooks
-import React, {useState} from "react";
+import React, { useEffect, useState } from "react";
 
 const Contador = () => {
   // contador valor actual
   // setContador la funcion para actualizar valor
   const [contador, setContador] = useState(0);
+
+  // aplicando useEffect
+  useEffect(() => {
+    // todo lo que se ejecuta
+    console.log("useEffect");
+  });
+
+  // useEffect de control en base a una variable de estado
+  useEffect(() => {
+    // todo lo que se ejecuta
+    console.log("contador: ", { contador });
+  }, [contador]);
+
   return (
     <div>
       <h1> Haz clickeado {contador}</h1>
@@ -37,5 +50,5 @@ const Contador = () => {
   );
 };
 
-// importante exportar 
+// importante exportar
 export default Contador;
