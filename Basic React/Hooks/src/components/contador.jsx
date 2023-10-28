@@ -18,6 +18,14 @@ const Contador = () => {
 
       <button
         onClick={() => {
+          setContador(contador - 1);
+        }}
+      >
+        Disminuir
+      </button>
+
+      <button
+        onClick={() => {
           setContador(0);
         }}
       >
