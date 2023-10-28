@@ -7,7 +7,7 @@ const Contador = () => {
   const [contador, setContador] = useState(0);
   return (
     <div>
-      <h1>Haz clickeado {contador}</h1>
+      <h1> Haz clickeado {contador}</h1>
       <button
         onClick={() => {
           setContador(contador + 1);
@@ -18,7 +18,9 @@ const Contador = () => {
 
       <button
         onClick={() => {
-          setContador(contador - 1);
+          if (contador > 0) {
+            setContador(contador - 1);
+          }
         }}
       >
         Disminuir
