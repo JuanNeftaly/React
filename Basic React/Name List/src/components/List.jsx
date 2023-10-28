@@ -9,9 +9,12 @@ const List = () => {
 
   // funcion de guardar
   const save = () => {
-    // guardar en arreglo
-    setNames([...names, name]);
-    setName("");
+    // verificacion para no vacios
+    if (name.trim() !== "") {
+      // guardar en arreglo
+      setNames([...names, name]);
+      setName("");
+    }
   };
 
   // cosas a retornar
