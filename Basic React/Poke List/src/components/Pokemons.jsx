@@ -28,7 +28,6 @@ const Pokemons = () => {
                 // dandole funcion a anterior - siguiente
                 setAnterior(data.previous);
                 setSiguiente(data.next);
-
             } catch (error) {
                 // Manejo de errores en caso de que falle la petición
                 console.error("Hubo un error al obtener los pokemones", error);
@@ -40,14 +39,14 @@ const Pokemons = () => {
 
     return (
         <div>
-            <ul>
+            <ol>
                 {
                     // mapear resultados
                     pokemones.map((pokemon, index) => {
                         return <li key={index}> {pokemon.name} </li>;
                     })
                 }
-            </ul>
+            </ol>
 
             <button onClick={() => anterior !== null && setActual(anterior)}>
                 Anterior
